@@ -1,0 +1,10 @@
+body {
+  font-family: pingfang SC, helvetica neue, arial, hiragino sans gb, microsoft yahei ui, microsoft yahei, simsun, sans-serif !important;
+}
+.next-loading {
+  position: relative;
+  display: inline-block;
+}
+a:visited {
+  color: inherit;
+}

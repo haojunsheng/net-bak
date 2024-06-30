@@ -1,0 +1,345 @@
+@font-face {
+  font-family: lake-icon;
+  src: url('') format("embedded-opentype"), url('') format("woff2"), url('') format("woff"), url('') format("truetype"), url('') format("svg");
+}
+@font-face {
+  font-family: Chinese Quote;
+  src: local("PingFang SC"), local("SimSun");
+  unicode-range: U+2018, U+2019, U+201C, U+201D;
+}
+.yuquesdk .lake-icon {
+  display: inline-block;
+  font-style: normal;
+  vertical-align: baseline;
+  text-align: center;
+  text-transform: none;
+  line-height: 1;
+  text-rendering: auto;
+}
+.yuquesdk .lake-icon::before {
+  display: block;
+  font-family: lake-icon !important;
+}
+.yuquesdk .lake-icon-link::before {
+  content: "";
+}
+.yuquesdk .lake-icon-full-screen::before, .yuquesdk .lake-icon-maximize::before {
+  content: "";
+}
+.yuquesdk [data-lake-card].lake-card-margin-top {
+  margin-top: 16px;
+}
+.yuquesdk [data-lake-card].lake-card-margin-bottom {
+  margin-bottom: 16px;
+}
+.yuquesdk .lake-image-meta {
+  position: relative;
+  color: rgb(89, 89, 89);
+  line-height: 0;
+}
+.yuquesdk .lake-image-meta::before {
+  content: " ";
+  position: absolute;
+  inset: 0px;
+  z-index: 1;
+  pointer-events: none;
+}
+.yuquesdk .lake-image-meta .lake-image-warning {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -12px;
+  margin-left: -12px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  color: rgb(250, 173, 20);
+  cursor: pointer;
+}
+.yuquesdk .lake-image-content {
+  position: relative;
+  border-radius: 3px;
+  background: rgb(245, 245, 245);
+}
+.yuquesdk .lake-image-content-istmp, .yuquesdk .lake-image-content-isvalid {
+  display: inline-block;
+  border-radius: 0px;
+  padding: 0px;
+  background: transparent;
+  border-color: transparent;
+}
+.yuquesdk .lake-image-content-istmp .lake-image-meta, .yuquesdk .lake-image-content-isvalid .lake-image-meta {
+  display: inline-block;
+}
+.yuquesdk .lake-image-content-istmp .lake-image-meta .image, .yuquesdk .lake-image-content-isvalid .lake-image-meta .image {
+  display: inline-block;
+  width: 100%;
+  opacity: 0.6;
+  text-align: left;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out 0s, box-shadow 0.3s ease-in-out 0s;
+  user-select: none;
+}
+.yuquesdk .lake-image-content-isvalid .lake-image-meta .image {
+  opacity: 1;
+}
+.yuquesdk .lake-image-editor-maximize {
+  position: absolute;
+  z-index: 2;
+  right: 10px;
+  top: 10px;
+  background-color: rgba(0, 0, 0, 0.65);
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  line-height: 20px;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 8px 0px;
+  cursor: pointer;
+}
+.yuquesdk .lake-image-editor-maximize .lake-icon-full-screen {
+  margin-left: 1px;
+}
+.yuquesdk .lake-image {
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  text-align: left;
+  border-radius: 3px;
+  line-height: 24px;
+  text-indent: 0px;
+  user-select: none;
+}
+.yuquesdk .lake-image-active .lake-image-content:not(.lake-image-content-isover):not(.lake-image-content-isfail):not(.lake-image-content-isvalid):not(.lake-image-content-istmp), .yuquesdk .lake-image:hover .lake-image-content:not(.lake-image-content-isover):not(.lake-image-content-isfail):not(.lake-image-content-isvalid):not(.lake-image-content-istmp) {
+  border-color: rgb(245, 245, 245);
+  background: rgb(245, 245, 245);
+}
+.yuquesdk .lake-engine-view .lake-image-content-isvalid .lake-image-meta > .image {
+  cursor: zoom-in;
+  user-select: auto;
+}
+.yuquesdk *, .yuquesdk ::after, .yuquesdk ::before {
+  box-sizing: border-box;
+}
+.yuquesdk .lake-engine-view h1, .yuquesdk .lake-engine-view h2, .yuquesdk .lake-engine-view h3, .yuquesdk .lake-engine-view h4, .yuquesdk .lake-engine-view h5, .yuquesdk .lake-engine-view h6 {
+  position: relative;
+}
+.yuquesdk .lake-engine-view h1:hover, .yuquesdk .lake-engine-view h2:hover, .yuquesdk .lake-engine-view h3:hover, .yuquesdk .lake-engine-view h4:hover, .yuquesdk .lake-engine-view h5:hover, .yuquesdk .lake-engine-view h6:hover {
+  position: relative;
+}
+.yuquesdk .lake-engine-view h1:target, .yuquesdk .lake-engine-view h2:target, .yuquesdk .lake-engine-view h3:target, .yuquesdk .lake-engine-view h4:target, .yuquesdk .lake-engine-view h5:target, .yuquesdk .lake-engine-view h6:target {
+  position: relative;
+}
+.yuquesdk .lake-table {
+  position: relative;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 0px;
+  overflow-wrap: break-word;
+  word-break: normal;
+  margin: 0px;
+  font-weight: 400;
+  box-sizing: border-box;
+  border: 1px solid rgb(217, 217, 217);
+  cursor: default;
+  width: 96%;
+}
+.yuquesdk .lake-table tbody, .yuquesdk .lake-table td, .yuquesdk .lake-table th, .yuquesdk .lake-table tr {
+  margin: 0px;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+.yuquesdk .lake-table tr {
+  height: 33px;
+}
+.yuquesdk .lake-table tr td, .yuquesdk .lake-table tr th {
+  min-width: 90px;
+  white-space: normal;
+  overflow-wrap: break-word;
+  border: 1px solid rgb(217, 217, 217);
+  vertical-align: top;
+  padding: 4px 8px;
+  cursor: default;
+}
+.yuquesdk .lake-table-reader {
+  padding-right: 20px;
+  overflow: auto;
+  padding-bottom: 0px !important;
+}
+.yuquesdk [data-lake-card="table"] > [data-card-element="body"] > [data-card-element="center"] {
+  z-index: 98;
+}
+.yuquesdk [data-lake-card="table"] [data-card-element="center"] {
+  overflow: hidden;
+}
+.yuquesdk .lake-card-toolbar.lake-embed-toolbar-block {
+  top: -48px;
+  bottom: auto;
+  display: none;
+}
+.yuquesdk .lake-embed-toolbar {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  width: auto;
+  line-height: 28px;
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  font-weight: 400;
+  text-indent: 0px;
+  user-select: none;
+}
+.yuquesdk .lake-embed-toolbar .lake-embed-toolbar-btn .lake-icon {
+  transform: translateY(1px);
+}
+.yuquesdk .lake-embed-toolbar-block {
+  inset: auto auto -46px -1px;
+  height: 40px;
+  z-index: 125;
+}
+.yuquesdk .lake-embed-toolbar-btn {
+  line-height: 28px;
+  padding: 0px 3px;
+  min-width: 28px;
+  display: inline-block;
+  text-align: center;
+  color: rgb(89, 89, 89);
+  border-radius: 2px;
+  transition: background-color 0.3s ease-in-out 0s;
+  cursor: pointer;
+}
+.yuquesdk .lake-embed-toolbar-btn .lake-icon, .yuquesdk .lake-embed-toolbar-btn .text {
+  font-size: 16px;
+  color: rgb(89, 89, 89);
+}
+.yuquesdk .lake-embed-toolbar-btn:hover {
+  background-color: rgb(244, 244, 244);
+}
+.yuquesdk .lake-embed-toolbar-group {
+  border: 1px solid rgba(226, 226, 226, 0.84);
+  border-radius: 2px;
+  box-shadow: rgba(225, 225, 225, 0.5) 0px 2px 4px 0px;
+  background: rgb(255, 255, 255);
+  position: relative;
+  display: inline-flex;
+  padding: 5px 3px;
+}
+.yuquesdk .lake-embed-toolbar-item {
+  position: relative;
+  display: inline-block;
+  line-height: 28px;
+  margin: 0px 3px;
+  text-align: left;
+  color: rgb(89, 89, 89);
+  flex: 0 0 auto;
+}
+.yuquesdk .lake-engine, .yuquesdk .lake-engine-view {
+  font-family: Chinese Quote, Segoe UI, Roboto, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif, Apple Color Emoji;
+  overflow-wrap: break-word;
+  outline-style: none;
+  white-space: pre-wrap;
+  user-select: auto;
+}
+.yuquesdk .lake-engine-view > :first-child, .yuquesdk .lake-engine > :first-child {
+  margin-top: 0px !important;
+}
+.yuquesdk .lake-engine-view [data-card-type], .yuquesdk .lake-engine [data-card-type] {
+  white-space: normal;
+}
+.yuquesdk .lake-engine-view a, .yuquesdk .lake-engine-view a:active, .yuquesdk .lake-engine a, .yuquesdk .lake-engine a:active {
+  overflow-wrap: break-word;
+  color: rgb(9, 109, 217);
+}
+.yuquesdk .lake-engine-view a:hover, .yuquesdk .lake-engine a:hover {
+  color: rgb(24, 144, 255);
+}
+.yuquesdk .lake-engine-view img, .yuquesdk .lake-engine img {
+  max-width: 100%;
+}
+.yuquesdk .lake-engine-view .lake-fontsize-1515, .yuquesdk .lake-engine .lake-fontsize-1515 {
+  font-size: 15px;
+}
+.yuquesdk .lake-engine-view .lake-fontsize-12, .yuquesdk .lake-engine .lake-fontsize-12 {
+  font-size: 16px;
+}
+.yuquesdk .lake-engine-view span, .yuquesdk .lake-engine span {
+  font-size: inherit;
+}
+.yuquesdk .lake-engine-view ol, .yuquesdk .lake-engine-view ul, .yuquesdk .lake-engine ol, .yuquesdk .lake-engine ul {
+  margin: 0px 0px 0px 3px;
+  padding: 0px;
+}
+.yuquesdk .lake-engine-view li, .yuquesdk .lake-engine li {
+  margin-left: 23px;
+}
+.yuquesdk .lake-engine-view ol, .yuquesdk .lake-engine-view ol[data-lake-indent="3"], .yuquesdk .lake-engine-view ol[data-lake-indent="6"], .yuquesdk .lake-engine ol, .yuquesdk .lake-engine ol[data-lake-indent="3"], .yuquesdk .lake-engine ol[data-lake-indent="6"] {
+  list-style-type: decimal;
+}
+.yuquesdk .lake-engine-view ul, .yuquesdk .lake-engine-view ul[data-lake-indent="3"], .yuquesdk .lake-engine-view ul[data-lake-indent="6"], .yuquesdk .lake-engine ul, .yuquesdk .lake-engine ul[data-lake-indent="3"], .yuquesdk .lake-engine ul[data-lake-indent="6"] {
+  list-style-type: disc;
+}
+.yuquesdk .lake-engine-view ul[data-lake-indent="1"], .yuquesdk .lake-engine-view ul[data-lake-indent="4"], .yuquesdk .lake-engine-view ul[data-lake-indent="7"], .yuquesdk .lake-engine ul[data-lake-indent="1"], .yuquesdk .lake-engine ul[data-lake-indent="4"], .yuquesdk .lake-engine ul[data-lake-indent="7"] {
+  list-style-type: circle;
+}
+.yuquesdk .lake-engine-view ol[data-lake-indent="1"], .yuquesdk .lake-engine-view ul[data-lake-indent="1"], .yuquesdk .lake-engine ol[data-lake-indent="1"], .yuquesdk .lake-engine ul[data-lake-indent="1"] {
+  padding-left: 2em;
+}
+.yuquesdk .lake-engine-view span[data-card-type="inline"], .yuquesdk .lake-engine span[data-card-type="inline"] {
+  display: inline-block;
+  text-indent: 0px;
+  vertical-align: baseline;
+  white-space: normal;
+}
+.yuquesdk .lake-engine-view span[data-card-type="inline"] span[data-card-element], .yuquesdk .lake-engine span[data-card-type="inline"] span[data-card-element] {
+  display: inline-block;
+}
+.yuquesdk .lake-engine-view span[data-card-type="inline"] span[data-card-element="center"], .yuquesdk .lake-engine span[data-card-type="inline"] span[data-card-element="center"] {
+  vertical-align: bottom;
+}
+.yuquesdk .lake-engine-view div[data-card-type="block"], .yuquesdk .lake-engine-view span[data-card-type="inline"].lake-card-block, .yuquesdk .lake-engine div[data-card-type="block"], .yuquesdk .lake-engine span[data-card-type="inline"].lake-card-block {
+  display: block;
+}
+.yuquesdk .lake-engine-view p, .yuquesdk .lake-engine p {
+  min-height: 24px;
+  margin-bottom: 0px;
+}
+.yuquesdk .lake-engine-view div[data-card-element="body"], .yuquesdk .lake-engine-view span[data-card-element="body"], .yuquesdk .lake-engine div[data-card-element="body"], .yuquesdk .lake-engine span[data-card-element="body"] {
+  position: relative;
+}
+.yuquesdk .lake-engine-view div[data-card-element="body"] [data-card-element="center"], .yuquesdk .lake-engine-view span[data-card-element="body"] [data-card-element="center"], .yuquesdk .lake-engine div[data-card-element="body"] [data-card-element="center"], .yuquesdk .lake-engine span[data-card-element="body"] [data-card-element="center"] {
+  user-select: text;
+}
+.yuquesdk .lake-typography-traditional {
+  line-height: 1.74;
+  font-size: 14px;
+  color: rgb(38, 38, 38);
+  letter-spacing: 0.05em;
+}
+.yuquesdk .lake-typography-traditional p {
+  margin: 0px;
+}
+.yuquesdk .lake-typography-traditional h1, .yuquesdk .lake-typography-traditional h2, .yuquesdk .lake-typography-traditional h3, .yuquesdk .lake-typography-traditional h4, .yuquesdk .lake-typography-traditional h5, .yuquesdk .lake-typography-traditional h6 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  word-spacing: 1px;
+  color: rgb(38, 38, 38);
+  font-weight: 700;
+  padding: 0px;
+}
+.yuquesdk .lake-typography-traditional h1 {
+  font-size: 28px;
+  line-height: 36px;
+  padding: 7px 0px;
+}
+.yuquesdk .lake-typography-traditional h4 {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 7px 0px;
+}
+.yuquesdk .lake-content-editor-extra, .yuquesdk .lake-embed-toolbar-item-link, .yuquesdk .lake-math-editor-toolbar-tips {
+  display: none;
+}

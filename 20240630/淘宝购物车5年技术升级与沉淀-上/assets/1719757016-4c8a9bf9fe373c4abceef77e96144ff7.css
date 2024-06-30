@@ -1,0 +1,8 @@
+:root {
+  --ai-assistant-widget-container-height: 700px;
+  --widget-container-fixed-height: min(calc(100vh - var(--ai-assistant-container-offset-top, 0px) - var(--ai-assistant-container-offset-bottom, 0px)),var(--ai-assistant-widget-container-height));
+}
+:root {
+  --ai-assistant-sscrollbar-width: 0px;
+  --ai-assistant-scrollbar-thumb-background: #e1e4ea;
+}

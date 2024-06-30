@@ -1,0 +1,15 @@
+body {
+  font-family: pingfang SC, helvetica neue, arial, hiragino sans gb, microsoft yahei ui, microsoft yahei, simsun, sans-serif !important;
+}
+.next-loading {
+  position: relative;
+  display: inline-block;
+}
+@font-face {
+  font-family: dev-community;
+  src: url('') format("woff2"), url('') format("woff"), url('') format("truetype"), url('') format("svg");
+  font-display: swap;
+}
+a:visited {
+  color: inherit;
+}

@@ -1,0 +1,16 @@
+@font-face {
+  font-family: dev-community;
+  src: url('') format("woff2"), url('') format("woff"), url('') format("truetype"), url('') format("svg");
+}
+a:active, a:hover, a:link, a:visited {
+  text-decoration: none !important;
+}
+:root {
+  --OFF: initial;
+}
+:root {
+  --ai-assistant-container-offset-top: var(--topbar-main-height);
+}
+:root {
+  --topbar-main-height: 64px;
+}
